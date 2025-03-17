@@ -2,8 +2,8 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8" />
-    <title>Магазин продуктів – Кошик</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Магазин продуктів – Категорії</title>
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
 <header class="main-header">
@@ -12,7 +12,7 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Головна</a></li>
-                <li><a href="index.html#categories">Категорії</a></li>
+                <li><a href="categories.html" class="active">Категорії</a></li>
                 <li><a href="cart.html">Кошик</a></li>
                 <li><a href="admin.html">Адмін-панель</a></li>
             </ul>
@@ -22,18 +22,13 @@
 
 <main class="container">
     <section class="section">
-        <h2>Ваш кошик</h2>
-        <div class="cart-items">
-            <!-- Тут JS виводить товари у кошику -->
-            <div class="cart-item">
-                <span>Яблука</span>
-                <span>30 грн</span>
-                <button>Видалити</button>
-            </div>
-        </div>
-        <div class="cart-total">
-            <p>Загальна сума: <strong>30 грн</strong></p>
-            <button>Оформити замовлення</button>
+        <h2>Всі категорії</h2>
+        <div class="categories-container">
+            <!-- Тут виводимо категорії -->
+            <article class="category-card">М'ясні продукти</article>
+            <article class="category-card">Молочні продукти</article>
+            <article class="category-card">Овочі та фрукти</article>
+            <article class="category-card">Снеки та солодощі</article>
         </div>
     </section>
 </main>

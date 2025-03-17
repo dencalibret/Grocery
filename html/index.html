@@ -1,10 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <title>Магазин продуктів – Головна</title>
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
+<header class="main-header">
+    <div class="container">
+        <h1 class="logo">Магазин продуктів</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="categories.html">Категорії</a></li>
+                <li><a href="cart.html">Кошик</a></li>
+                <li><a href="admin.html">Адмін-панель</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
+<main class="container">
+    <section class="hero section">
+        <h2>Ласкаво просимо!</h2>
+        <p>Тут ви знайдете найсвіжіші продукти за вигідними цінами.</p>
+        <button>Переглянути товари</button>
+    </section>
+
+    <section class="section">
+        <h2>Популярні товари</h2>
+        <div class="products-container">
+            <!-- Тут можна динамічно виводити картки товарів -->
+            <article class="product-card">
+                <h3>Сир</h3>
+                <p>Ціна: 50 грн</p>
+                <button>Додати в кошик</button>
+            </article>
+            <article class="product-card">
+                <h3>Яблука</h3>
+                <p>Ціна: 30 грн</p>
+                <button>Додати в кошик</button>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer class="main-footer">
+    <div class="container">
+        <p>Магазин продуктів</p>
+    </div>
+</footer>
 </body>
 </html>

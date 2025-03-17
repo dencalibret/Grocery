@@ -1,10 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <title>Магазин продуктів – Адмін-панель</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+<header class="main-header">
+    <div class="container">
+        <h1 class="logo">Магазин продуктів</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="index.html#categories">Категорії</a></li>
+                <li><a href="cart.html">Кошик</a></li>
+                <li><a href="admin.html">Адмін-панель</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
+<main class="container">
+    <section class="section">
+        <h2>Авторизація адміністратора</h2>
+        <form class="admin-login">
+            <label for="username">Логін:</label>
+            <input type="text" id="username" name="username" />
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" />
+            <button type="submit">Увійти</button>
+        </form>
+    </section>
+
+    <section class="section">
+        <h2>Управління товарами</h2>
+        <div class="admin-crud">
+            <!-- Прикладова форма для додавання/редагування товару -->
+            <form class="product-form">
+                <input type="text" placeholder="Назва товару" />
+                <input type="text" placeholder="Ціна" />
+                <button>Додати товар</button>
+            </form>
+            <!-- Тут можна відобразити список товарів з кнопками "Редагувати" і "Видалити" -->
+        </div>
+    </section>
+</main>
+
+<footer class="main-footer">
+    <div class="container">
+        <p>Магазин продуктів</p>
+    </div>
+</footer>
 </body>
 </html>

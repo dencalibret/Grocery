@@ -1,0 +1,127 @@
+/* Скидання відступів і базові налаштування */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: #f8f8f8;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Контейнер */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+.main-header {
+    background: #4caf50; /* Зелений хедер */
+    color: #fff;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Меню */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.main-nav a:hover {
+    opacity: 0.8;
+}
+
+.main-nav .active {
+    border-bottom: 2px solid #fff;
+}
+
+/* Основні блоки */
+.section {
+    background: #fff;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    color: #4caf50; /* Зелена назва секції */
+}
+
+/* Кнопки */
+button {
+    background: #4caf50;
+    border: none;
+    color: #fff;
+    padding: 8px 14px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #43a047;
+}
+
+/* Картки категорій і товарів */
+.categories-container,
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.category-card,
+.product-card {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    flex: 1 1 calc(25% - 15px);
+    min-width: 200px;
+    transition: box-shadow 0.2s;
+}
+
+.category-card:hover,
+.product-card:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* "Герой"-блок на головній (приклад) */
+.hero {
+    text-align: center;
+    background: #e8f5e9;
+}
+
+/* Футер */
+.main-footer {
+    background: #e2e2e2;
+    color: #333;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+.main-footer p {
+    font-size: 0.9rem;
+}
