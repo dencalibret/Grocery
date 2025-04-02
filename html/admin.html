@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8" />
-    <title>Магазин продуктів – Адмін-панель</title>
+    <meta charset="UTF-8">
+    <title>PurpleMart – Адмін-панель</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../src/main.js"></script>
 </head>
 <body>
+
 <header class="main-header">
-    <div class="container">
-        <h1 class="logo">Магазин продуктів</h1>
-        <nav class="main-nav">
+    <div class="container header-content">
+        <h1 class="logo">PurpleMart</h1>
+        <nav class="main-nav right-nav">
             <ul>
                 <li><a href="index.html">Головна</a></li>
-                <li><a href="index.html#categories">Категорії</a></li>
-                <li><a href="cart.html">Кошик</a></li>
-                <li><a href="admin.html">Адмін-панель</a></li>
+                <li><a href="categories.html">Категорії</a></li>
+                <li><a href="login.html">Адмін-вхід</a></li>
             </ul>
+            <a href="cart.html" class="cart-link">
+                <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="Cart">
+                <span id="cartCount">0</span>
+            </a>
         </nav>
     </div>
 </header>
 
 <main class="container">
     <section class="section">
-        <h2>Авторизація адміністратора</h2>
-        <form class="admin-login">
-            <label for="username">Логін:</label>
-            <input type="text" id="username" name="username" />
-            <label for="password">Пароль:</label>
-            <input type="password" id="password" name="password" />
-            <button type="submit">Увійти</button>
-        </form>
-    </section>
-
-    <section class="section">
         <h2>Управління товарами</h2>
-        <div class="admin-crud">
-            <!-- Прикладова форма для додавання/редагування товару -->
-            <form class="product-form">
-                <input type="text" placeholder="Назва товару" />
-                <input type="text" placeholder="Ціна" />
-                <button>Додати товар</button>
-            </form>
-            <!-- Тут можна відобразити список товарів з кнопками "Редагувати" і "Видалити" -->
+        <form class="product-form">
+            <div class="admin-form-group">
+                <label>Назва товару:</label>
+                <input type="text" class="name-input" placeholder="Назва товару">
+            </div>
+            <div class="admin-form-group">
+                <label>Ціна:</label>
+                <input type="text" class="price-input" placeholder="Ціна">
+            </div>
+            <div class="admin-form-group">
+                <label>Категорія:</label>
+                <select class="category-select"></select>
+            </div>
+            <div class="admin-form-group">
+                <label>URL зображення:</label>
+                <input type="text" class="img-input" placeholder="Посилання на фото">
+            </div>
+            <button type="submit">Додати товар</button>
+        </form>
+        <div class="admin-product-list" style="margin-top: 15px;">
+            <!-- JS: updateAdminList() -->
         </div>
     </section>
 </main>
 
 <footer class="main-footer">
     <div class="container">
-        <p>Магазин продуктів</p>
+        <p>PurpleMart</p>
     </div>
 </footer>
+
 </body>
 </html>

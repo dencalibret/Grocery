@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8" />
-    <title>PurpleMart – Товар</title>
+    <meta charset="UTF-8">
+    <title>PurpleMart – Логін</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../src/main.js"></script>
+    <script src="../src/main.js" defer></script>
 </head>
 <body>
 
@@ -26,12 +26,19 @@
 </header>
 
 <main class="container">
-    <section class="section product-details">
-        <img src="https://via.placeholder.com/300" alt="Фото товару">
-        <div class="product-info">
-            <h2>Назва товару</h2>
-            <!-- JS: renderProductPage() вставить ціну, кнопку -->
-        </div>
+    <section class="section">
+        <h2>Вхід до адмін-панелі</h2>
+        <form id="loginForm">
+            <div>
+                <label for="username">Логін:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div>
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit">Увійти</button>
+        </form>
     </section>
 </main>
 
